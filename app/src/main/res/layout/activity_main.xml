@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lgcs.mismapas.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <ImageButton
+        android:id="@+id/imgBtnPrimero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTexto"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/beach_umbrella_48"
+        android:onClick="goPier"
+        android:background="?android:selectableItemBackground"
+        />
+
+    <ImageButton
+        android:id="@+id/imgBtnSegundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTexto"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/beach_48"
+        android:onClick="goBeach"
+        android:background="?android:selectableItemBackground"
+        />
+    <ImageButton
+        android:id="@+id/imgBtnTercero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtnPrimero"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/church_48"
+        android:background="?android:selectableItemBackground"
+        android:onClick="goChurch"
+        />
+    <ImageButton
+        android:id="@+id/imgBtnCuarto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtnPrimero"
+        android:src="@drawable/tail_of_whale_filled_50"
+        android:onClick="goWhale"
+        android:background="?android:selectableItemBackground"
+        />
+
+    <Button
+        android:layout_below="@id/imgBtnTercero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_maps"
+        android:onClick="irMapa"/>
+</RelativeLayout>
